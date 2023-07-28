@@ -1,54 +1,25 @@
 import { Snow } from "../Icons"
+import { Card } from "./Card"
 import "./Cards.css"
+import { MediaCardSmall } from "./MediaCardSmall"
+import { MediumCard } from "./MediumCard"
 
 export const Cards = () => {
   return (
-    
+<>    
 <div className="small-cards"> 
-    <div className="container-smallcards">
-        <p>Tomorrow</p>
-        <div className="contenedor-snow"> </div> 
-        <div className="temperatura">
-          <p>16°C</p>
-          <p>11°C</p>
-        </div>
-    </div>
-    <div className="container-smallcards">
-        <p>Tomorrow</p>
-        <div className="contenedor-snow"> </div> 
-        <div className="temperatura">
-          <p>16°C</p>
-          <p>11°C</p>
-        </div>
-    </div>
-    <div className="container-smallcards">
-        <p>Tomorrow</p>
-        <div className="contenedor-snow"> </div> 
-        <div className="temperatura">
-          <p>16°C</p>
-          <p>11°C</p>
-        </div>
-    </div>
-    <div className="container-smallcards">
-        <p>Tomorrow</p>
-        <div className="contenedor-snow"> </div> 
-        <div className="temperatura">
-          <p>16°C</p>
-          <p>11°C</p>
-        </div>
-    </div>
-    <div className="container-smallcards">
-        <p>Tomorrow</p>
-        <div className="contenedor-snow"> </div> 
-        <div className="temperatura">
-          <p>16°C</p>
-          <p>11°C</p>
-        </div>
-    </div>
-    
-   
+    <Card /> 
+    <Card /> 
+    <Card /> 
+    <Card /> 
+    <Card /> 
+   <MediumCard />
+  <MediaCardSmall />
+  
+
 
 </div>
+</>
     
   )
 }

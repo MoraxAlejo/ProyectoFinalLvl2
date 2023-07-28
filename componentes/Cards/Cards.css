@@ -1,12 +1,15 @@
  @media screen and (min-width:1024px){
    
    .small-cards {
-    width: 800px;
+    padding-left: 100px;
+    max-width: 800px;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 100px;
    }
    
     .container-smallcards{
@@ -15,7 +18,7 @@
         align-items: center;
         flex-direction: column;
         background-color: #1E213A;
-        width: 15%;
+        width: 16%;
         height: 50%;
     }
     
@@ -33,4 +36,200 @@
         display: flex;
         gap: 15px;
     }
+
+    .texto-card {
+        color: white;
+        position: absolute;
+        top: 700px;
+    }
+
+    .medium-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 328px;
+        height: 204px;
+        flex-shrink: 0;
+        background: #1E213A;
+    }
+
+    .container-7 {
+        display: flex;
+        align-items: center;
+    }
+
+    .container-7 > :last-child {
+        color: #E7E7EB;
+        font-family: Raleway;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .p1 {
+        color: #E7E7EB;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .p2 {
+        color: #E7E7EB;
+        font-family: Raleway;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .navigation-container {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navigation-container > :first-child {
+        border-radius: 50%;
+        background-color: grey;
+        
+    }
+
+
+    .contenedor-medium {
+        padding-top: 60px;
+    }
+
+    .medium-small-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 328px;
+            height: 159px;
+            flex-shrink: 0;
+            background: #1E213A;
+    
+    
+    }
+
+    .medium-small-cards-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 328px;
+        height: 159px;
+        flex-shrink: 0;
+        background: #1E213A;
+
+
+}
+
+    .visibility {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .visibility > :first-child {
+        color: #E7E7EB;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .visibility > :last-child {
+        color: #E7E7EB;
+        font-family: Raleway;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .mb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mb > :first-child {
+        color: #E7E7EB;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .mb > :last-child {
+        color: #E7E7EB;
+        font-family: Raleway;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .contenedor-medium-2 {
+        padding-top: 60px;
+    }
+
+    .medium-cards-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 328px;
+        height: 204px;
+        flex-shrink: 0;
+        background: #1E213A;
+    }
+
+    .medium-cards-2 > :first-child {
+        color: #E7E7EB;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .porcentaje {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .porcentaje > :first-child {
+        color: #E7E7EB; 
+        text-align: center;
+        font-family: Raleway;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .porcentaje > :last-child {
+        color: #E7E7EB;
+        font-family: Raleway;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
  }
