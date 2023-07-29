@@ -1,11 +1,14 @@
 import { Cloud, Icons } from "../Icons"
 import { Location } from "../Icons"
+import { Nav } from "../Nav/Nav"
 
 
 export const BigCard = () => {
   return (
     <>
+    
     <div className='bigcard'>
+      
         <div className="contenedor-nav">
       <nav>
         <ul>
