@@ -1,4 +1,4 @@
-.bigcarg-nav {
+.bigcard-nav {
     background: #1E213A;
     color: white;
     width: 400px;
@@ -115,4 +115,14 @@
   }
 
   
+  .bigcard-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
   
+  }
+
+  .nav-list {
+    display: none;
+  }

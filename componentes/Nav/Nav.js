@@ -1,13 +1,25 @@
+"use client"
+
 import { Close, Search } from "../Icons"
 import { CityList } from "./CityList"
 import "./Nav.css"
 
 export const Nav = () => {
     const search = <Search/>
+    function desaparecer() {
+      const desaparece = document.querySelector("#navlist")
+
+      desaparece.classList.add("nav-list")
+
+
+
+    }
+
+
   return (
-    <div className="bigcarg-nav">
+    <div className="bigcard-nav nav-list" id="navlist">
       <div className="container-inputs">
-        <div><button className="close"><Close /></button></div>
+        <div><button onClick={desaparecer} className="close" id="close-boton"><Close /></button></div>
         <div className="contenedor-alineador">
        <div className="container-search"> {search} <input id="search" type="text" placeholder = "Search Location"  />
         </div>

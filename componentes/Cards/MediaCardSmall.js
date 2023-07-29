@@ -1,4 +1,4 @@
-import { Nav } from "../Nav/Nav"
+
 
 
 export const MediaCardSmall = () => {
@@ -19,7 +19,7 @@ export const MediaCardSmall = () => {
         <p>998 </p><p>mb</p>
         </div>
     </div>
-    <Nav />
+   
     </>
   )
 }

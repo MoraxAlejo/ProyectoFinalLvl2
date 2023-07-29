@@ -1,19 +1,29 @@
+"use client"
 import { Cloud, Icons } from "../Icons"
 import { Location } from "../Icons"
 import { Nav } from "../Nav/Nav"
 
 
+
 export const BigCard = () => {
+
+  function handleClick() {
+    const big_nav_list = document.querySelector("#navlist")
+
+    big_nav_list.classList.remove("nav-list")
+  }
+
   return (
     <>
-    
+   
     <div className='bigcard'>
-      
+    
         <div className="contenedor-nav">
+          
       <nav>
         <ul>
           <li className="li-search">
-            <button className="search">Seach for places</button>
+            <button onClick={handleClick} className="search" id="buscador">Seach for places</button>
           </li>
           <li className="li-location">
             
