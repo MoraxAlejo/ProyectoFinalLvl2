@@ -9,6 +9,8 @@
 
 .padre {
   background-color: #100E1D;
+  max-width: 375px;
+  height: 450vh;
 }
 
 
@@ -190,10 +192,10 @@ line-height: normal;
 
 
 
-
 @media screen and (min-width:1024px){
   .padre {
     display: flex;
+    background-color:  #100E1D ;
     
   }
   
@@ -202,3 +204,4 @@ line-height: normal;
   }
 
 }
+

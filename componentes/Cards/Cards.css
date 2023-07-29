@@ -1,16 +1,28 @@
- @media screen and (min-width:1024px){
-   
-   .small-cards {
-    padding-left: 100px;
+
+ 
+ .small-cards {
     max-width: 800px;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
-    padding-top: 100px;
+    gap: 20px;
+    padding-top: 40px;
    }
+
+   .text-cards {
+    padding-top: 30px;
+    width: 300px;
+    color: #E7E7EB;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   }
+
+   
    
     .container-smallcards{
         display: flex;
@@ -18,13 +30,14 @@
         align-items: center;
         flex-direction: column;
         background-color: #1E213A;
-        width: 16%;
+        width: 36%;
         height: 50%;
     }
     
+   
     .contenedor-snow {
-        width: 70px;
-        height: 100px;
+        width: 60px;
+        height: 80px;
         background-image: url(/snow.png);
         background-size: 100% 100%;
         background-position: center center;
@@ -103,7 +116,7 @@
 
 
     .contenedor-medium {
-        padding-top: 60px;
+        padding-top: 0px;
     }
 
     .medium-small-cards {
@@ -183,7 +196,7 @@
     }
 
     .contenedor-medium-2 {
-        padding-top: 60px;
+        padding-top: 0px;
     }
 
     .medium-cards-2 {
@@ -232,4 +245,41 @@
         line-height: normal;
     }
 
- }
+
+ 
+    @media screen and (min-width:1024px){
+        .padre {
+          display: flex;
+          background-color:  #100E1D ;
+          height: auto;
+          max-width: 1024px;
+        }
+        
+        .bigcard {
+          width: 300px;
+        }
+
+        .container-smallcards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #1E213A;
+            width: 16%;
+            height: 50%;
+        }
+
+        .text-cards {
+            padding-top: 70px;
+            width: 700px;
+            
+           }
+
+           .small-cards {
+            padding-top: 80px;
+            padding-left: 40px;
+           }
+        
+        
+      
+      }

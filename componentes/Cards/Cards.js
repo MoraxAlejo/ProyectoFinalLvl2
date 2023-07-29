@@ -5,6 +5,7 @@ import { MediaCardSmall } from "./MediaCardSmall"
 import { MediumCard } from "./MediumCard"
 
 export const Cards = () => {
+  const text = "Today's Highlights"
   return (
 <>    
 <div className="small-cards"> 
@@ -13,6 +14,8 @@ export const Cards = () => {
     <Card /> 
     <Card /> 
     <Card /> 
+   
+    <p className="text-cards">{text}</p>
    <MediumCard />
   <MediaCardSmall />
   

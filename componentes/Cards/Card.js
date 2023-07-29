@@ -2,6 +2,7 @@
 
 export const Card = () => {
   return (
+    
     <div className="container-smallcards">
     <p>Tomorrow</p>
     <div className="contenedor-snow"> </div> 
@@ -10,5 +11,6 @@ export const Card = () => {
       <p>11°C</p>
     </div>
     </div>
+    
   )
 }

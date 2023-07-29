@@ -5,7 +5,6 @@ import { Icons } from "../../componentes/Icons"
 export default function Home() {
   return (
     <div className='padre'>
-      
       <BigCard />
       <Cards  />
       
