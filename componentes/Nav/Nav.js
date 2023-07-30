@@ -6,6 +6,7 @@ import "./Nav.css"
 
 export const Nav = () => {
     const search = <Search/>
+    
     function desaparecer() {
       const desaparece = document.querySelector("#navlist")
 

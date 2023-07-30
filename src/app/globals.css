@@ -198,9 +198,20 @@ line-height: normal;
     
   }
   
-  .bigcard {
-    width: 300px;
+  
+  .contenedor-nav {
+    width: 350px;
   }
+
+
+  .bigcard {
+   width:  350px;
+  }
+
+  .bigcard-nav {
+    height: 20px;
+  }
+
 
 }
 

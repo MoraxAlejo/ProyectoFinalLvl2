@@ -2,7 +2,7 @@
     background: #1E213A;
     color: white;
     width: 400px;
-    height: 700px;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -126,3 +126,4 @@
   .nav-list {
     display: none;
   }
+

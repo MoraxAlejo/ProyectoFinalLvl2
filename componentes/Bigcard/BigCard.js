@@ -16,7 +16,7 @@ export const BigCard = () => {
   return (
     <>
    
-    <div className='bigcard'>
+    <div className="bigcard">
     
         <div className="contenedor-nav">
           
