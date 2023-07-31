@@ -35,12 +35,10 @@
     }
     
    
-    .contenedor-snow {
-        width: 60px;
-        height: 80px;
-        background-image: url(/snow.png);
-        background-size: 100% 100%;
-        background-position: center center;
+    .contenedor-snow > :first-child {
+      width: 80px;
+      padding-right: 8px;
+        
         
     } 
 

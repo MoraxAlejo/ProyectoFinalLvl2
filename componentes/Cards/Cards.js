@@ -9,11 +9,11 @@ export const Cards = () => {
   return (
 <>    
 <div className="small-cards"> 
-    <Card /> 
-    <Card /> 
-    <Card /> 
-    <Card /> 
-    <Card /> 
+    <Card image = "./Clear.png" /> 
+    <Card image = "./Hail.png" /> 
+    <Card image = "./LightCloud.png" /> 
+    <Card image = "./Shower.png" /> 
+    <Card image = "./snow.png" /> 
    
     <p className="text-cards">{text}</p>
    <MediumCard />
