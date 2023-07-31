@@ -243,6 +243,70 @@
         line-height: normal;
     }
 
+    .barra-porcentual {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 80px;
+        background: #E7E7EB;
+        width: 229px;
+        height: 9px;
+        flex-shrink: 0;
+    }
+
+    .amarillo {
+       border-radius: 80px;
+       background: #FFEC65;
+       width: 70%;
+       height: 9px;
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+
+    .numbers {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 390px ;
+        color: #A09FB1;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 5px;
+    }
+
+    .porcentaje-humedad {
+        padding-top: 5px;
+        width:220px ;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+    .porcentaje-humedad > :first-child {
+        color: #A09FB1;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .p3 {
+        color: #E7E7EB;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+   
+
 
  
     @media screen and (min-width:1024px){
