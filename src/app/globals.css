@@ -5,11 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   
+  
 }
 
 .padre {
   background-color: #100E1D;
-  max-width: 500px;
+  max-width: 400px;
+  width: 400px;
   height: 450vh;
 }
 
@@ -195,6 +197,7 @@ line-height: normal;
   .padre {
     display: flex;
     background-color:  #100E1D ;
+    width: 1300px;
     
   }
   

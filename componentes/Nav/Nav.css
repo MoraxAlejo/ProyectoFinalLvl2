@@ -175,3 +175,13 @@ li > p {
     align-items: center;
     padding: 30px;
 }
+
+input {
+  color: white;
+  background-color: #1E213A;
+}
+
+input[type]:focus {
+  border-color: transparent;
+  outline: 0 none;
+}
