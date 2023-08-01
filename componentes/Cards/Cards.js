@@ -11,11 +11,11 @@ export const Cards = ({datos}) => {
 <>    
 <div className="small-cards"> 
 <div className="alineador">
-    <Card image = "./Clear.png" datos = {datos} /> 
-    <Card image = "./Hail.png" datos = {datos}  /> 
-    <Card image = "./LightCloud.png" datos = {datos}  /> 
-    <Card image = "./Shower.png" datos = {datos}  /> 
-    <Card image = "./snow.png" datos = {datos}  /> 
+    <Card text = "Tomorrow" image = "./Clear.png" datos = {datos} /> 
+    <Card text = "Sun, 7 Jun" image = "./Hail.png" datos = {datos}  /> 
+    <Card text = "Mon, 8 Jun" image = "./LightCloud.png" datos = {datos}  /> 
+    <Card text = "Tues, 9 Jun" image = "./Shower.png" datos = {datos}  /> 
+    <Card text = "Wed, 10 Jun" image = "./snow.png" datos = {datos}  /> 
     </div>
    
     <p className="text-cards">{text}</p>

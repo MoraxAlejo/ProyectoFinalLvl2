@@ -76,6 +76,19 @@ const mi_ubicacion = () => {
     </>
   )
     } 
+    else if (tiempo == "Drizzle") {
+      return (
+      <> 
+      <Nav setCity = {setCity}   />
+      <div className='padre'>
+        <BigCard imagen = "/Shower.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+        <Cards datos = {datos} />
+      </div>
+      </>
+    )
+      } 
+
+
     
 
   return (

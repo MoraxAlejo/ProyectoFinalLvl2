@@ -2,7 +2,7 @@ export const Card = (props, datos) => {
   return (
     <div className="container-smallcards">
       <div className="container-next-day">
-      <p>Tomorrow</p>
+      <p>{props.text}</p>
       <div className="contenedor-snow">
         {" "}
         <img src={props.image} />{" "}
