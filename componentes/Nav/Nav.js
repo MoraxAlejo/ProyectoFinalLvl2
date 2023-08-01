@@ -25,6 +25,8 @@ export const Nav = ({setCity}) => {
     const handleClickCityList = (cityName) => {
     setCity(cityName);
     setSelectedCity(cityName);
+    desaparecer()
+
     };
 
     const [selectedCity, setSelectedCity] = useState(null);
