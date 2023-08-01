@@ -326,7 +326,52 @@
 
 
  
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:1280px){
+        .padre {
+          display: flex;
+          background-color:  #100E1D ;
+          height: auto;
+          max-width: 1284px;
+        }
+        
+        .alineador {
+            width: 800px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 31px;
+            padding-left: 0px;
+          
+        
+           }
+        
+
+        .container-smallcards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #1E213A;
+            width: 16%;
+            height: 50%;
+        }
+
+        .text-cards {
+            padding-top: 70px;
+            width: 700px;
+            
+           }
+
+           .small-cards {
+            padding-top: 80px;
+            padding-left: 120px;
+           }
+        
+        
+      
+      }
+
+      @media screen and (min-width:1024px){
         .padre {
           display: flex;
           background-color:  #100E1D ;
