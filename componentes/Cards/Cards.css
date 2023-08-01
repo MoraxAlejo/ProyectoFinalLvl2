@@ -10,7 +10,16 @@
     gap: 20px;
     padding-top: 40px;
    }
+   .alineador {
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    gap: 20px;
+  
 
+   }
    .text-cards {
     padding-top: 30px;
     width: 300px;
@@ -30,14 +39,22 @@
         align-items: center;
         flex-direction: column;
         background-color: #1E213A;
-        width: 36%;
-        height: 50%;
+        width: 130px;
+        height: 170px;
+        
+    }
+
+    .container-next-day {
+        width: 60%;
+        height: 60%;
+        display:contents;
     }
     
    
     .contenedor-snow > :first-child {
       width: 80px;
       padding-right: 8px;
+      height: 70px;
         
         
     } 

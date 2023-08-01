@@ -33,15 +33,15 @@ const mi_ubicacion = () => {
     setCity(data.locality);
   });
 };
-
-    
-
   return (
-    <>
+    <> 
     <Nav setCity = {setCity}   />
     <div className='padre'>
-       
-      <BigCard datos = {datos} mi_ubicacion = {mi_ubicacion} />
+    
+
+      <BigCard imagen = "" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+
+
       <Cards datos = {datos} />
       
     </div>

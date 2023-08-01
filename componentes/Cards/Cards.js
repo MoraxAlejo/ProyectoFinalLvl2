@@ -10,11 +10,13 @@ export const Cards = ({datos}) => {
   return (
 <>    
 <div className="small-cards"> 
+<div className="alineador">
     <Card image = "./Clear.png" datos = {datos} /> 
     <Card image = "./Hail.png" datos = {datos}  /> 
     <Card image = "./LightCloud.png" datos = {datos}  /> 
     <Card image = "./Shower.png" datos = {datos}  /> 
     <Card image = "./snow.png" datos = {datos}  /> 
+    </div>
    
     <p className="text-cards">{text}</p>
    <MediumCard datos ={datos} />
