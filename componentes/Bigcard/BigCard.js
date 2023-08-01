@@ -5,7 +5,12 @@ import { Nav } from "../Nav/Nav"
 import { useState , useEffect } from "react"
 
 
-export const BigCard = () => {
+export const BigCard = ({datos , mi_ubicacion}) => {
+
+  // para la ubicacion en la que estoy
+  const handleMiUbicacion = () => {
+    mi_ubicacion();
+  };
 
   function handleClick() {
     const big_nav_list = document.querySelector("#navlist")
@@ -13,17 +18,7 @@ export const BigCard = () => {
     big_nav_list.classList.remove("nav-list")
   }
 
-  const KEY = "fb5f1762203630e3519254f88d5c6496";
-  const city = "cartagena";
-  const [datos, setDatos] = useState();
-
-    useEffect(() => {
-        const promesa = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${KEY}&units=metric`)
-        Promise.all([promesa]).then(async (values) => {
-            const data = await values[0].json();
-            setDatos(data);
-        })
-    }, []);
+  
 
 
 
@@ -39,8 +34,7 @@ export const BigCard = () => {
           <li className="li-search">
             <button onClick={handleClick} className="search" id="buscador">Seach for places</button>
           </li>
-          <li className="li-location">
-            
+          <li onClick={handleMiUbicacion} className="li-location">  
             <Icons />
           </li>
         </ul>

@@ -129,3 +129,49 @@
     display: none;
   }
 
+  .listas-container {
+    height: 78%;
+}
+
+.lista{
+    width: 350px;
+    height: 100%;
+    flex-direction: column;
+
+}
+
+.liListas{
+    height: 15%;
+}
+
+.lista-city {
+    color: #E7E7EB;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 70px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista-city:hover{
+    border: 1px solid #616475;
+    
+}
+
+.flecita{
+    display: contents !important;
+    color: #616475;
+    font-size: 15px !important;
+    
+}
+
+li > p {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}

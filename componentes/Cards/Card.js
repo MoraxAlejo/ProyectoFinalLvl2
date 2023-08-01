@@ -1,6 +1,6 @@
 
 
-export const Card = (props) => {
+export const Card = (props , datos) => {
   return (
     
     <div className="container-smallcards">
