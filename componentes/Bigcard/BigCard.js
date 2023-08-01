@@ -5,7 +5,7 @@ import { Nav } from "../Nav/Nav"
 import { useState , useEffect } from "react"
 
 
-export const BigCard = ({datos , mi_ubicacion}) => {
+export const BigCard = ({datos , mi_ubicacion , imagen}) => {
 
   // para la ubicacion en la que estoy
   const handleMiUbicacion = () => {
@@ -44,7 +44,7 @@ export const BigCard = ({datos , mi_ubicacion}) => {
 
         </div>
            <div className="cloud">
-            <Cloud />
+          <img src={imagen} />
            </div> 
            
             

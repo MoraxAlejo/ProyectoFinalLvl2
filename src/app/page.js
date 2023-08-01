@@ -33,13 +33,46 @@ const mi_ubicacion = () => {
     setCity(data.locality);
   });
 };
+  const tiempo = datos?.weather[0].main
+  if (tiempo == "Rain") {
+    return (
+    <> 
+    <Nav setCity = {setCity}   />
+    <div className='padre'>
+      <BigCard imagen = "/HeavyRain.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+      <Cards datos = {datos} />
+    </div>
+    </>
+  )
+  } else if (tiempo == "Clear") {
+    return (
+    <> 
+    <Nav setCity = {setCity}   />
+    <div className='padre'>
+      <BigCard imagen = "/Clear.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+      <Cards datos = {datos} />
+    </div>
+    </>
+  ) 
+    } else if (tiempo == "Clouds") {
+    return (
+    <> 
+    <Nav setCity = {setCity}   />
+    <div className='padre'>
+      <BigCard imagen = "/HeavyCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+      <Cards datos = {datos} />
+    </div>
+    </>
+  )
+    }
+
   return (
     <> 
     <Nav setCity = {setCity}   />
     <div className='padre'>
     
 
-      <BigCard imagen = "" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+      <BigCard imagen = "/LightCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
 
 
       <Cards datos = {datos} />
