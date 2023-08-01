@@ -48,7 +48,7 @@ export const Nav = ({setCity}) => {
       <div className="container-inputs">
         <div><button onClick={desaparecer} className="close" id="close-boton"><Close /></button></div>
         <div className="contenedor-alineador">
-       <div className="container-search"> {search} <input onChange={handleInputcapture} id="search" type="text" placeholder = "Search Location"  />
+       <div className="container-search"> {search} <input onChange={handleInputcapture} value={searchValue} id="search" type="text" placeholder = "Search Location"  />
         </div>
         <button onClick={handleClickBusqueda} id="boton-search">Search</button>
         </div>

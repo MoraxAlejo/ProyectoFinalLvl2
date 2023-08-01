@@ -1,11 +1,12 @@
 "use client"
+
 import { Cloud, Icons } from "../Icons"
 import { Location } from "../Icons"
 import { Nav } from "../Nav/Nav"
 import { useState , useEffect } from "react"
 
 
-export const BigCard = ({datos , mi_ubicacion , imagen}) => {
+export const BigCard = ({datos , mi_ubicacion , imagen , grados}) => {
 
   // para la ubicacion en la que estoy
   const handleMiUbicacion = () => {
@@ -49,7 +50,7 @@ export const BigCard = ({datos , mi_ubicacion , imagen}) => {
            
             
             <div className="contenedor-grados">
-            <p className="grados">{datos?.main.temp}</p> <p className="c">°C</p>
+            <p className="grados">{datos?.main.temp}</p> <p className="c">{grados === 'metric' ? '°C' : '°F'}</p>
             </div>
             <p className="shower">{datos?.weather[0].main}</p>
             <div className="today"> 

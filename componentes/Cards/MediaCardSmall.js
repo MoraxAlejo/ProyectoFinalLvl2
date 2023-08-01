@@ -3,6 +3,7 @@ import { useState,useEffect } from "react";
 
 export const MediaCardSmall = ({datos}) => {
  
+  const visible = Math.round(datos?.visibility / 1609.34)
 
   return (
     <>
@@ -10,7 +11,7 @@ export const MediaCardSmall = ({datos}) => {
       
        <p>Visibility</p>
        <div className="visibility">
-       <p>{datos?.visibility}</p> <p>miles</p> 
+       <p>{visible}</p> <p>miles</p> 
       </div>
     </div>
 

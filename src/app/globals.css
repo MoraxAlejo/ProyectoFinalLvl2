@@ -1,32 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@500&display=swap");
+
+input {
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.contenedor-centigrados {
+  display: none;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  
 }
 
 .padre {
-  background-color: #100E1D;
+  background-color: #100e1d;
   max-width: 400px;
   width: 400px;
   height: 450vh;
 }
 
-
 ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  
-  
 }
 
-
 .backimage {
-  position:relative;
+  position: relative;
   width: 100%;
   height: 300px;
   background-image: url(/cloudy.png);
@@ -40,18 +50,13 @@ ul {
 .cloud {
   position: absolute;
   bottom: 220px;
-
 }
 
 .bigcard {
-  background-color: #1E213A;
+  background-color: #1e213a;
   color: white;
-  height: 150vh;
+  height: 170vh;
 }
-
-
-
-
 
 .small-cards {
   height: 500px;
@@ -62,7 +67,7 @@ ul {
 }
 
 .search {
-  background: #6E707A;
+  background: #6e707a;
   border-color: transparent;
   height: 50px;
   width: 170px;
@@ -73,28 +78,26 @@ ul {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-
 }
 
 .location {
   background-color: grey;
-font-family: Raleway;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-color: white;
-  
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: white;
 }
 
 .li-search {
-  padding-top: 10px ;
+  padding-top: 10px;
   padding-left: 10px;
 }
 
 .li-location {
-  padding-top: 15px ;
-  padding-right: 10px
+  padding-top: 15px;
+  padding-right: 10px;
 }
 
 .wheater-info {
@@ -109,38 +112,36 @@ color: white;
   justify-content: center;
   align-items: center;
   height: 40vh;
- 
 }
 
 .c {
-  padding-top: 50px;
-  color: #A09FB1;
-font-family: Raleway;
-font-size: 48px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  padding-top: 10px;
+  color: #a09fb1;
+  font-family: Raleway;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .grados {
-  color: #E7E7EB;
-font-family: Raleway;
-font-size: 120px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  color: #e7e7eb;
+  font-family: Raleway;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .shower {
-  
-  color: #A09FB1;
-text-align: center;
-font-family: Raleway;
-font-size: 36px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-padding-bottom: 40px;
+  color: #a09fb1;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 40px;
 }
 
 .today {
@@ -153,16 +154,16 @@ padding-bottom: 40px;
 }
 
 .today-text {
-  color: #88869D;
-font-family: Raleway;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  color: #88869d;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .point {
-  color: #88869D;
+  color: #88869d;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
@@ -172,48 +173,86 @@ line-height: normal;
 }
 
 .date {
-  color: #88869D;
-font-family: Raleway;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  color: #88869d;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .ciudad {
   display: flex;
-  color: #88869D;
-font-family: Raleway;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-  
+  color: #88869d;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .cloud {
   top: 100px;
-    left: 90px;
+  left: 90px;
 }
 
-
-
-@media screen and (min-width:1024px){
+@media screen and (min-width: 1024px) {
   .padre {
     display: flex;
-    background-color:  #100E1D ;
+    background-color: #100e1d;
     width: 1300px;
+  }
+
+  .contenedor-centigrados {
+    width: 660px;
+   height: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+    padding-bottom: 50px;
     
   }
-  
-  
+
+  .contenedor-centigrados > :first-child {
+    color: #110e3c;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #e7e7eb;
+    border-color: transparent;
+    top: 30px;
+  }
+
+  .contenedor-centigrados > :last-child {
+    color: #e7e7eb;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50px;
+    background: #585676;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-color: transparent;
+    top: 30px;
+  }
+
   .contenedor-nav {
     width: 350px;
   }
 
-
   .bigcard {
-   width:  350px;
+    width: 350px;
   }
 
   .bigcard-nav {
@@ -223,5 +262,7 @@ line-height: normal;
   .cloud {
     left: 50px;
   }
-}
 
+  
+
+}

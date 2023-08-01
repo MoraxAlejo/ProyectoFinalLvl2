@@ -2,7 +2,7 @@
     background: #1E213A;
     color: white;
     width: 400px;
-    height: 150vh;
+    height: 170vh;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -185,3 +185,5 @@ input[type]:focus {
   border-color: transparent;
   outline: 0 none;
 }
+
+
