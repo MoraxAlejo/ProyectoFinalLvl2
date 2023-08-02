@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@500&display=swap");
 
+.description {
+  color: #a09fb1;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #100e1d;
+  width: 400px;
+}
+
 input {
   cursor: pointer;
 }
@@ -26,7 +38,7 @@ button {
   background-color: #100e1d;
   max-width: 400px;
   width: 400px;
-  height: 450vh;
+  height: 500vh;
 }
 
 ul {
@@ -197,6 +209,10 @@ ul {
 }
 
 @media screen and (min-width: 1280px) {
+
+  .description {
+    display: none;
+  }
   .padre {
     display: flex;
     background-color: #100e1d;
@@ -205,13 +221,12 @@ ul {
 
   .contenedor-centigrados {
     width: 660px;
-   height: 5px;
+    height: 5px;
     display: flex;
     justify-content: end;
     align-items: end;
     gap: 20px;
     padding-bottom: 50px;
-    
   }
 
   .contenedor-centigrados > :first-child {
@@ -262,12 +277,9 @@ ul {
   .cloud {
     left: 50px;
   }
-
-  
-
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .padre {
     display: flex;
     background-color: #100e1d;
@@ -276,13 +288,12 @@ ul {
 
   .contenedor-centigrados {
     width: 660px;
-   height: 5px;
+    height: 5px;
     display: flex;
     justify-content: end;
     align-items: end;
     gap: 20px;
     padding-bottom: 50px;
-    
   }
 
   .contenedor-centigrados > :first-child {
@@ -333,7 +344,4 @@ ul {
   .cloud {
     left: 50px;
   }
-
-  
-
 }

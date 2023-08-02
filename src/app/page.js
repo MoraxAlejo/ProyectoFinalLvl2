@@ -61,6 +61,7 @@ const mi_ubicacion = () => {
       <BigCard datosdias ={datosdias} grados = {grados} imagen = "/HeavyRain.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
       <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}  datos = {datos} />
     </div>
+    <p className="description">C3 Company Morax Alejo</p>
     </>
   )
   } else if (tiempo == "Clear") {
@@ -70,7 +71,9 @@ const mi_ubicacion = () => {
     <div className='padre'>
       <BigCard datosdias ={datosdias} grados = {grados} imagen = "/Clear.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
       <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
+      
     </div>
+    <p className="description">C3 Company Morax Alejo</p>
     </>
   ) 
     } else if (tiempo == "Clouds") {
@@ -81,7 +84,9 @@ const mi_ubicacion = () => {
     <div className='padre'>
       <BigCard datosdias ={datosdias} grados = {grados} imagen = "/HeavyCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
       <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}  datos = {datos} />
+      
     </div>
+    <p className="description">C3 Company Morax Alejo</p>
     </>
   )
     } 
@@ -92,7 +97,9 @@ const mi_ubicacion = () => {
     <div className='padre'>
       <BigCard datosdias ={datosdias} grados = {grados} imagen = "/tormenta.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
       <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
+      
     </div>
+    <p className="description">C3 Company Morax Alejo</p>
     </>
   )
     } 
@@ -103,7 +110,9 @@ const mi_ubicacion = () => {
       <div className='padre'>
         <BigCard datosdias ={datosdias} grados = {grados} imagen = "/Shower.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
         <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
+        
       </div>
+      <p className="description">C3 Company Morax Alejo</p>
       </>
     )
       } 
@@ -115,7 +124,9 @@ const mi_ubicacion = () => {
         <div className='padre'>
           <BigCard datosdias ={datosdias} grados = {grados} imagen = "/LightCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
           <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
+          
         </div>
+        <p className="description">C3 Company Morax Alejo</p>
         </>
       )
         } 
@@ -133,7 +144,9 @@ const mi_ubicacion = () => {
 
       <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
       
-    </div>
+     
+    </div> 
+    <p className="description">C3 Company Morax Alejo</p>
     </>
   )
 }
