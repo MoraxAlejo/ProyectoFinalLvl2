@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export const MediumCard = ({datos}) => {
 
- 
+ const exactwind = Math.round(datos?.wind.speed)
 
   const percent = datos?.main.humidity
 
@@ -16,7 +16,7 @@ export const MediumCard = ({datos}) => {
      <div className="medium-cards">
         <p className="p1">Wind Status</p>
         <div className="container-7">
-        <p className="p2">{datos?.wind.speed}</p> <p>mph</p>
+        <p className="p2">{exactwind}</p> <p>mph</p>
         </div>
         <div className="navigation-container">
         <Navigation/><p className="p3">WSW</p>

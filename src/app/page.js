@@ -7,7 +7,7 @@ import { useState, useEffect } from "react"
 export default function Home() {
   const [grados , setGrados] = useState("metric")
   const KEY = "fb5f1762203630e3519254f88d5c6496";
-  const  [city, setCity] = useState('Cochabamba');
+  const  [city, setCity] = useState('iquitos');
   const [datos, setDatos] = useState();
 
     useEffect(() => {

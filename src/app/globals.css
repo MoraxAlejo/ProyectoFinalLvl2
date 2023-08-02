@@ -67,7 +67,7 @@ ul {
 .bigcard {
   background-color: #1e213a;
   color: white;
-  height: 170vh;
+  height: 190vh;
 }
 
 .small-cards {
@@ -81,8 +81,8 @@ ul {
 .search {
   background: #6e707a;
   border-color: transparent;
-  height: 50px;
-  width: 170px;
+  height: 40px;
+  width: 160px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: white;
   font-family: Raleway;
@@ -103,7 +103,7 @@ ul {
 }
 
 .li-search {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left: 10px;
 }
 
@@ -209,6 +209,62 @@ ul {
 }
 
 @media screen and (min-width: 1280px) {
+  
+  .text-cards {
+   padding-top: 0px;
+  }
+
+
+  .li-search {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .li-location {
+    padding-top: 20px;
+    
+  }
+
+  .search {
+    height: 40px;
+    width: 161px;
+  }
+
+
+  .shower {
+    padding-bottom: 0px;
+    padding-top: 70px;
+  }
+
+  .cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+  }
+
+  .cloud > :first-child {
+    top: 50px;
+  }
+
+
+    .contenedor-grados {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+      padding-top: 30px;
+  }
+  
+
+  .wheater-info {
+    height: 90vh;
+}
+
+  .bigcard {
+    height: 100.3vh;
+  }
+
 
   .description {
     display: none;
@@ -280,68 +336,5 @@ ul {
 }
 
 @media screen and (min-width: 1024px) {
-  .padre {
-    display: flex;
-    background-color: #100e1d;
-    width: 1300px;
-  }
 
-  .contenedor-centigrados {
-    width: 660px;
-    height: 5px;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    gap: 20px;
-    padding-bottom: 50px;
-  }
-
-  .contenedor-centigrados > :first-child {
-    color: #110e3c;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 50px;
-    background: #e7e7eb;
-    border-color: transparent;
-    top: 30px;
-  }
-
-  .contenedor-centigrados > :last-child {
-    color: #e7e7eb;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border-radius: 50px;
-    background: #585676;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    border-color: transparent;
-    top: 30px;
-  }
-
-  .contenedor-nav {
-    width: 350px;
-  }
-
-  .bigcard {
-    width: 350px;
-  }
-
-  .bigcard-nav {
-    height: 20px;
-  }
-
-  .cloud {
-    left: 50px;
-  }
 }

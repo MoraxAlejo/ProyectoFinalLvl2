@@ -19,6 +19,8 @@ export const BigCard = ({datos , mi_ubicacion , imagen , grados}) => {
     big_nav_list.classList.remove("nav-list")
   }
 
+  const gradosexactos = Math.round(datos?.main.temp)
+
   
 
 
@@ -50,7 +52,7 @@ export const BigCard = ({datos , mi_ubicacion , imagen , grados}) => {
            
             
             <div className="contenedor-grados">
-            <p className="grados">{datos?.main.temp}</p> <p className="c">{grados === 'metric' ? '°C' : '°F'}</p>
+            <p className="grados">{gradosexactos}</p> <p className="c">{grados === 'metric' ? '°C' : '°F'}</p>
             </div>
             <p className="shower">{datos?.weather[0].main}</p>
             <div className="today"> 

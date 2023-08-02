@@ -142,6 +142,8 @@
         line-height: normal;
     }
 
+    
+
     .navigation-container {
         padding-top: 20px;
         display: flex;
@@ -191,6 +193,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 10px;
     }
 
     .visibility > :first-child {
@@ -216,6 +219,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 10px;
     }
 
     .mb > :first-child {
@@ -349,11 +353,25 @@
         line-height: normal;
     }
 
-   
+    .container-7 {
+        width: 100px;
+        gap: 5px;
+    }
 
+    .container-7 > :last-child {
+        color: #E7E7EB;
+        font-family: Raleway;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
 
  
     @media screen and (min-width:1280px){
+
+       
+       
         .padre {
           display: flex;
           background-color:  #100E1D ;
@@ -372,7 +390,11 @@
           
         
            }
-        
+           .text-cards {
+            
+            width: 700px;
+            
+           }
 
         .container-smallcards{
             display: flex;
@@ -384,22 +406,27 @@
             
         }
 
-        .text-cards {
-            padding-top: 70px;
-            width: 700px;
-            
-           }
 
            .small-cards {
             padding-top: 80px;
             padding-left: 120px;
            }
         
-        
+          
       
       }
 
-      @media screen and (min-width:1024px){
+      @media screen and (min-width:1280px){
+        
+        
+
+        .contenedor-centigrados {
+            padding-bottom: 30px;
+        }
+        
+        .alineador {
+            height: 140px;
+        }
         .padre {
           display: flex;
           background-color:  #100E1D ;
@@ -430,7 +457,7 @@
         }
 
         .text-cards {
-            padding-top: 70px;
+            
             width: 700px;
             
            }

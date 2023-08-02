@@ -9,10 +9,10 @@ export const Grados = ({grados, setGrados}) => {
   return (
     <div className="contenedor-centigrados">
         <button onClick={() => setGrados('metric')} >
-        ℃
+        <p className="text-grados">℃</p>
         </button>
-        <button onClick={() => setGrados('imperial')}>
-        ℉
+        <button className="text-grados-f" onClick={() => setGrados('imperial')}>
+        <p>℉</p>
         </button>
     </div>
   )
