@@ -28,7 +28,7 @@ export const Cards = ({datos, datosdias , grados , setGrados}) => {
   <Card text={fecha2.toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })} image="./tormenta.png" datos={datosdias[1]} />
   <Card text={fecha3.toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })} image="./LightRain.png" datos={datosdias[2]} />
   <Card text={fecha4.toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })} image="./Clear.png" datos={datosdias[3]} />
-  <Card text={fecha5.toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })} image="./Snow.png" datos={datosdias[4]} />
+  <Card text={fecha5.toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' })} image="./LightCloud.png" datos={datosdias[4]} />
     </div>
    
     <p className="text-cards">{text}</p>
