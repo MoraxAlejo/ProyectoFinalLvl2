@@ -50,6 +50,15 @@
         display:contents;
     }
     
+    .container-next-day > :first-child{
+        color: #E7E7EB;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
    
     .contenedor-snow > :first-child {
       width: 80px;
@@ -62,7 +71,25 @@
     .temperatura {
         padding-top: 15px;
         display: flex;
-        gap: 15px;
+        gap: 10px;
+    }
+
+    .temperatura > :first-child {
+        color: #E7E7EB;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .temperatura > :last-child {
+        color: #A09FB1;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
 
     .texto-card {
@@ -336,6 +363,7 @@
         
         .alineador {
             width: 800px;
+            height: 250px;
             display: flex;
             justify-content: flex-start;
             flex-wrap: wrap;
@@ -353,7 +381,7 @@
             flex-direction: column;
             background-color: #1E213A;
             width: 16%;
-            height: 50%;
+            
         }
 
         .text-cards {
@@ -398,7 +426,7 @@
             flex-direction: column;
             background-color: #1E213A;
             width: 16%;
-            height: 50%;
+            
         }
 
         .text-cards {

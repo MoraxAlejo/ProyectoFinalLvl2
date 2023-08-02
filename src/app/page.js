@@ -7,7 +7,7 @@ import { useState, useEffect } from "react"
 export default function Home() {
   const [grados , setGrados] = useState("metric")
   const KEY = "fb5f1762203630e3519254f88d5c6496";
-  const  [city, setCity] = useState('santa marta');
+  const  [city, setCity] = useState('Cochabamba');
   const [datos, setDatos] = useState();
 
     useEffect(() => {
@@ -22,26 +22,24 @@ export default function Home() {
         })
     }, [city , grados]); 
 
-/*
-codigo que intente para los dias siguientes =
-
- const [datosdias, setDatosDias] = useState()
+const [datosdias, setDatosDias] = useState([]);
 
 useEffect(() => {
-  const promes = fetch(`api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${KEY}`)
+  const promes = fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${KEY}`);
   Promise.all([promes]).then(async (values) => {
-      const datasiguientes = await values[0].json();
-      if (datasiguientes.cod === '404') {
-        alert("Ciudad no encontrada, Porfavor Introduzca una ciudad existente u otra ciudad");
-      } else {
-        setDatosDias(datasiguientes);
-      }
-  })
-    }, [city]); 
+    const datasiguientes = await values[0].json();
+    if (datasiguientes.cod === '404') {
+      alert("Ciudad no encontrada, Porfavor Introduzca una ciudad existente u otra ciudad");
+    } else {
+      // Obtener los datos para los próximos 5 días
+      const datosProximosCincoDias = datasiguientes.list.filter((dato, index) => index % 8 === 0);
+      setDatosDias(datosProximosCincoDias);
+    }
+  })
+}, [city]);
 
 console.log(datosdias)
 
-*/
 
 // codigo para la geolocation de tu ubicacion 
 
@@ -60,8 +58,8 @@ const mi_ubicacion = () => {
     <> 
     <Nav setCity = {setCity}   />
     <div className='padre'>
-      <BigCard grados = {grados} imagen = "/HeavyRain.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
-      <Cards grados={grados} setGrados={setGrados}  datos = {datos} />
+      <BigCard datosdias ={datosdias} grados = {grados} imagen = "/HeavyRain.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+      <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}  datos = {datos} />
     </div>
     </>
   )
@@ -70,8 +68,8 @@ const mi_ubicacion = () => {
     <> 
     <Nav setCity = {setCity}   />
     <div className='padre'>
-      <BigCard grados = {grados} imagen = "/Clear.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
-      <Cards grados={grados} setGrados={setGrados}   datos = {datos} />
+      <BigCard datosdias ={datosdias} grados = {grados} imagen = "/Clear.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+      <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
     </div>
     </>
   ) 
@@ -81,8 +79,8 @@ const mi_ubicacion = () => {
     
     <Nav setCity = {setCity}   />
     <div className='padre'>
-      <BigCard grados = {grados} imagen = "/HeavyCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
-      <Cards grados={grados} setGrados={setGrados}  datos = {datos} />
+      <BigCard datosdias ={datosdias} grados = {grados} imagen = "/HeavyCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+      <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}  datos = {datos} />
     </div>
     </>
   )
@@ -92,8 +90,8 @@ const mi_ubicacion = () => {
     <> 
     <Nav setCity = {setCity}   />
     <div className='padre'>
-      <BigCard grados = {grados} imagen = "/tormenta.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
-      <Cards grados={grados} setGrados={setGrados}   datos = {datos} />
+      <BigCard datosdias ={datosdias} grados = {grados} imagen = "/tormenta.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+      <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
     </div>
     </>
   )
@@ -103,8 +101,8 @@ const mi_ubicacion = () => {
       <> 
       <Nav setCity = {setCity}   />
       <div className='padre'>
-        <BigCard grados = {grados} imagen = "/Shower.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
-        <Cards grados={grados} setGrados={setGrados}   datos = {datos} />
+        <BigCard datosdias ={datosdias} grados = {grados} imagen = "/Shower.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+        <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
       </div>
       </>
     )
@@ -115,8 +113,8 @@ const mi_ubicacion = () => {
         <> 
         <Nav setCity = {setCity}   />
         <div className='padre'>
-          <BigCard grados = {grados} imagen = "/LightCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
-          <Cards grados={grados} setGrados={setGrados}   datos = {datos} />
+          <BigCard datosdias ={datosdias} grados = {grados} imagen = "/LightCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+          <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
         </div>
         </>
       )
@@ -130,10 +128,10 @@ const mi_ubicacion = () => {
     <div className='padre'>
     
 
-      <BigCard grados = {grados} imagen = "/LightCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
+      <BigCard datosdias ={datosdias} grados = {grados} imagen = "/LightCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
 
 
-      <Cards grados={grados} setGrados={setGrados}   datos = {datos} />
+      <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
       
     </div>
     </>
