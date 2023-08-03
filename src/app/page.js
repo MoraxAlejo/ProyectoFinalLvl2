@@ -57,7 +57,7 @@ const mi_ubicacion = () => {
     return (
     <> 
     <Nav setCity = {setCity}   />
-    <div className='padre'>
+    <div className='padre' id="patrono">
       <BigCard datosdias ={datosdias} grados = {grados} imagen = "/HeavyRain.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
       <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}  datos = {datos} />
     </div>
@@ -68,7 +68,7 @@ const mi_ubicacion = () => {
     return (
     <> 
     <Nav setCity = {setCity}   />
-    <div className='padre'>
+    <div className='padre' id="patrono">
       <BigCard datosdias ={datosdias} grados = {grados} imagen = "/Clear.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
       <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
       
@@ -81,7 +81,7 @@ const mi_ubicacion = () => {
     <> 
     
     <Nav setCity = {setCity}   />
-    <div className='padre'>
+    <div className='padre' id="patrono">
       <BigCard datosdias ={datosdias} grados = {grados} imagen = "/HeavyCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
       <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}  datos = {datos} />
       
@@ -94,7 +94,7 @@ const mi_ubicacion = () => {
     return (
     <> 
     <Nav setCity = {setCity}   />
-    <div className='padre'>
+    <div className='padre' id="patrono">
       <BigCard datosdias ={datosdias} grados = {grados} imagen = "/tormenta.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
       <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
       
@@ -107,7 +107,7 @@ const mi_ubicacion = () => {
       return (
       <> 
       <Nav setCity = {setCity}   />
-      <div className='padre'>
+      <div className='padre' id="patrono">
         <BigCard datosdias ={datosdias} grados = {grados} imagen = "/Shower.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
         <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
         
@@ -121,7 +121,7 @@ const mi_ubicacion = () => {
         return (
         <> 
         <Nav setCity = {setCity}   />
-        <div className='padre'>
+        <div className='padre' id="patrono">
           <BigCard datosdias ={datosdias} grados = {grados} imagen = "/LightCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />
           <Cards datosdias ={datosdias} grados={grados} setGrados={setGrados}   datos = {datos} />
           
@@ -136,7 +136,7 @@ const mi_ubicacion = () => {
   return (
     <> 
     <Nav setCity = {setCity}   />
-    <div className='padre'>
+    <div className='padre' id="patrono">
     
 
       <BigCard datosdias ={datosdias} grados = {grados} imagen = "/LightCloud.png" datos = {datos} mi_ubicacion = {mi_ubicacion} />

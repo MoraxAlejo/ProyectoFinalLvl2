@@ -28,7 +28,7 @@ export const BigCard = ({datos , mi_ubicacion , imagen , grados}) => {
   return (
     <>
    
-    <div className="bigcard">
+    <div className="bigcard" id="cartagrande">
     
         <div className="contenedor-nav">
           

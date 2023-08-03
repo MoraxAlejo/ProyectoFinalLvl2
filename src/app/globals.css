@@ -38,7 +38,7 @@ button {
   background-color: #100e1d;
   max-width: 400px;
   width: 400px;
-  height: 500vh;
+  height: 350vh;
 }
 
 ul {
@@ -67,7 +67,8 @@ ul {
 .bigcard {
   background-color: #1e213a;
   color: white;
-  height: 190vh;
+  height: 140vh;
+  width: 400px;
 }
 
 .small-cards {
@@ -118,6 +119,8 @@ ul {
   align-items: center;
   flex-direction: column;
 }
+
+
 
 .contenedor-grados {
   display: flex;
@@ -208,7 +211,7 @@ ul {
   left: 90px;
 }
 
-@media screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   
   .text-cards {
    padding-top: 0px;
@@ -273,6 +276,7 @@ ul {
     display: flex;
     background-color: #100e1d;
     width: 1300px;
+    height: 100.3vh;
   }
 
   .contenedor-centigrados {
@@ -335,6 +339,90 @@ ul {
   }
 }
 
-@media screen and (min-width: 1024px) {
+/*
+
+
+@media only screen and (min-width: 1024px) {
+
+  .backimage {
+    height: 100%;
+    
+  }
+ 
+   .padre {
+    display: flex;
+    background-color: #100e1d;
+    height: 110.3vh;
+    max-width: 1300px;
+    width: 240vh;
+  }
+  
+ 
+  .wheater-info {
+    height: 80vh;
+}
+
+.cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+}
+
+.cloud > :first-child {
+  top: 50px;
+} 
+
+.text-cards {
+  padding-top: 0px;
+  width: 700px;
+ }
+
+ .contenedor-centigrados {
+  width: 660px;
+  height: 5px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.contenedor-centigrados > :first-child {
+  color: #110e3c;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #e7e7eb;
+  border-color: transparent;
+  top: 30px;
+}
+
+.contenedor-centigrados > :last-child {
+  color: #e7e7eb;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 50px;
+  background: #585676;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-color: transparent;
+  top: 30px;
+}
+
+
 
 }
+
+*/

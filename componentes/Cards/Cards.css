@@ -368,16 +368,9 @@
     }
 
  
-    @media screen and (min-width:1280px){
+    @media only screen and (min-width:1280px){
 
-       
-       
-        .padre {
-          display: flex;
-          background-color:  #100E1D ;
-          height: auto;
-          max-width: 1284px;
-        }
+      
         
         .alineador {
             width: 800px;
@@ -416,9 +409,11 @@
       
       }
 
-      @media screen and (min-width:1280px){
+      @media only screen and (min-width:1024px){
         
-        
+        .description {
+            display: none;
+           }
 
         .contenedor-centigrados {
             padding-bottom: 30px;
@@ -430,7 +425,7 @@
         .padre {
           display: flex;
           background-color:  #100E1D ;
-          height: auto;
+
           max-width: 1284px;
         }
         
@@ -467,6 +462,5 @@
             padding-left: 120px;
            }
         
-        
-      
+          
       }
