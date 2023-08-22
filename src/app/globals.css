@@ -261,11 +261,11 @@ ul {
   
 
   .wheater-info {
-    height: 90vh;
+    height: 120vh;
 }
 
   .bigcard {
-    height: 100.3vh;
+    height: 150vh;
   }
 
 
@@ -276,7 +276,7 @@ ul {
     display: flex;
     background-color: #100e1d;
     width: 1300px;
-    height: 100.3vh;
+    height: 150vh;
   }
 
   .contenedor-centigrados {
