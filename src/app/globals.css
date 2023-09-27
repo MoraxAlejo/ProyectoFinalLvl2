@@ -339,7 +339,7 @@ ul {
   }
 }
 
-/*
+
 
 
 @media only screen and (min-width: 1024px) {
@@ -352,14 +352,14 @@ ul {
    .padre {
     display: flex;
     background-color: #100e1d;
-    height: 110.3vh;
+    height: 140vh;
     max-width: 1300px;
-    width: 240vh;
+    width: 222.5vh;
   }
   
  
   .wheater-info {
-    height: 80vh;
+    height: 120vh;
 }
 
 .cloud {
@@ -425,4 +425,3 @@ ul {
 
 }
 
-*/
